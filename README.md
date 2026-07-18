@@ -1,6 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## ディスクリプション
+windowsでnpmを使用すると、バージョン管理ツールなどを入れないと
+
+## 環境
+- windows, ローカルに node が入っていない。(入っててももちろん動く)
+
 
 ## 使い方
+最初に`docker desktop start`を実行させておく。
 ```
 git clone https://github.com/ユーザー名/next-template.git <project_name>
 
