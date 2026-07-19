@@ -3,7 +3,7 @@
 
 ## 環境
 - windows, ローカルに node が入っていない。(入っててももちろん動く)
-
+- VSCODE, cursorに**dev container**が使えること
 
 ## 使い方
 最初に`docker desktop start`を実行させておく。
@@ -19,14 +19,16 @@ git clone https://github.com/situlyu93/nextjs-template .
 ```
 - `cd <project_name>`
 - `docker compose build`
+- `docker compose run --rm app npm ci`
 - `docker compose up -d`
+
 
 ### npm ライブラリ追加方法
 - appコンテナが起動中
-  - `docker compose exec app npm install @chakra-ui/react`
+  - `docker compose exec app npm install @packagee-name`
 
 - appコンテナが起動していない
-  - `docker compose run --rm app npm install @chakra-ui/react`
+  - `docker compose run --rm app npm install @package-name`
 
 - 反映されていない場合、以下を実行
   - `docker compose down && docker compose up -d`
@@ -43,3 +45,6 @@ git clone https://github.com/situlyu93/nextjs-template .
 docker compose exec app npm install next@14 react@18 react-dom@18
 docker compose exec app npm install -D eslint-config-next@14
 ```
+
+## 過去の情報
+- 過去の修正や、修正背景などは`MEMO/`を参照すること。
