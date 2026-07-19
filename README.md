@@ -8,7 +8,7 @@
 ## 使い方
 最初に`docker desktop start`を実行させておく。
 ```
-git clone https://github.com/ユーザー名/next-template.git <project_name>
+git clone [https://github.com/ユーザー名/next-template.git](https://github.com/situlyu93/nextjs-template) <project_name>
 
 OR
 
