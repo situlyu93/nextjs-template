@@ -3,7 +3,6 @@
 
 ## 環境
 - windows, ローカルに node が入っていない。(入っててももちろん動く)
-- VSCODE, cursorに**dev container**が使えること
 
 ## 使い方
 最初に`docker desktop start`を実行させておく。
