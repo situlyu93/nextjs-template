@@ -45,5 +45,15 @@ docker compose exec app npm install next@14 react@18 react-dom@18
 docker compose exec app npm install -D eslint-config-next@14
 ```
 
+## 終了時
+### このプロジェクトのコンテナとネットワークを削除
+- `docker compose down --remove-orphans`
+
+### コンテナ、ネットワーク、Composeがビルドしたイメージを削除
+- `docker compose down --rmi local --remove-orphans`
+
+### 必要になったら再作成
+- `docker compose up -d --build`
+
 ## 過去の情報
 - 過去の修正や、修正背景などは`MEMO/`を参照すること。
